@@ -31,7 +31,8 @@
                                 <p><strong>{{display_field}}</strong></p>
 								{{{localizeText ../display.instances_last_save_date_label}}}
                                 <p>{{savepoint_timestamp}}</p>
-								<p><strong>{{localizeText savepoint_type_text}}</strong></p>
+								<p class="savepoints {{status_class}}"><strong>{{localizeText savepoint_type_text}}</strong></p>
+
 								{{#if is_checkpoint}}
 									<span class="glyphicon glyphicon-warning-sign"></span></p>
 								{{/if}}

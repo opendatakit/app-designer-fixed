@@ -623,9 +623,11 @@ promptTypes.instances = promptTypes.base.extend({
                     if ( savepoint_type === opendatakit.savepoint_type_complete ) {
                         term.savepoint_type_text = that.savepoint_type_finalized_text;
 						term.is_checkpoint = false;
+						term.status_class = 'finalized';
                     } else if ( savepoint_type === opendatakit.savepoint_type_incomplete ) {
                         term.savepoint_type_text = that.savepoint_type_incomplete_text;
 						term.is_checkpoint = false;
+						term.status_class = 'incomplete';
                     } else {
                         term.savepoint_type_text = that.savepoint_type_checkpoint_text;
 						term.is_checkpoint = true;

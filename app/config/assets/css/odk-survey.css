@@ -632,3 +632,29 @@ Eventually we should make a jqm theme for this.
     margin-right:50px;
 }
 
+.savepoints.finalized {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    padding: 16px;
+    justify-content: center;
+    color: #1CCB3D;
+    background-color: #F0FDF2;
+    height: 40px;
+    border-radius: 15px
+}
+
+.savepoints.incomplete {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    padding: 16px;
+    justify-content: center;
+    color: #DF961F;
+    background-color: #FCF8EA;
+    height: 40px;
+    border-radius: 15px
+}
+
