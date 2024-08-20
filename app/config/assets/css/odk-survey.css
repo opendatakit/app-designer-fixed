@@ -341,7 +341,32 @@ Eventually we should make a jqm theme for this.
 
 .instanceRowControl{
   float: right;
+  display: flex;
+  margin-right: auto;
+  gap: 5px;
 }
+
+.instanceRowControl .openInstance {
+   border-top-left-radius: 8px!important;
+   border-top-right-radius: 8px!important;
+   border-bottom-right-radius: 8px!important;
+   border-bottom-left-radius: 8px!important;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center
+ }
+
+.instanceRowControl .deleteInstance {
+   border-top-left-radius: 8px!important;
+   border-top-right-radius: 8px!important;
+   border-bottom-right-radius: 8px!important;
+   border-bottom-left-radius: 8px!important;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center
+   }
 
 .openingRowControl{
   float: right;
