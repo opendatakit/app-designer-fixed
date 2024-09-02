@@ -46,6 +46,7 @@ body {
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 3em;
+    margin: 24px;
 }
 
 .input-container {
@@ -339,8 +340,22 @@ Eventually we should make a jqm theme for this.
     width: 100%;
 }
 
+.createInstance{
+     display: flex;
+     justify-content: center;
+     gap: 8px;
+     background-color: #5594d7;
+     color: white;
+     text-align: center;
+     font-size: 14px;
+     border: none;
+     border-radius: 24px;
+     width: 100%;
+     padding: 16px;
+    }
+
 .instanceRowControl{
-  float: right;
+   float:right;
 }
 
 .openingRowControl{
