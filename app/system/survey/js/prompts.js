@@ -1036,7 +1036,10 @@ promptTypes.linked_table = promptTypes._linked_type.extend({
 
         var dispatchStruct = {promptPath: that.getPromptPath(), userAction: 'launchSurvey'};
 
-		var outcome = odkSurvey.addInstance(dispatchStruct,
+		var newInstanceElementKeyToValueMap = {}; // create an empty map for the new instance's element key-value pairs
+        newInstanceElementKeyToValueMap._locale = parentInstance._locale; // add the parent's _locale value to the map, if not already present
+
+        var outcome = odkSurvey.addInstance(dispatchStruct,
 			that.getLinkedTableId(),
 			that.getLinkedFormId(),
 			newInstanceElementKeyToValueMap);
