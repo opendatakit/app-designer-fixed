@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../../../assets/css/bootstrap-5.1.0/bootstrap.min.css" type="text/css" rel="stylesheet">
+
+    <!-- Load internationalization definitions -->
+    <script defer src="../../../assets/commonDefinitions.js"></script>
+    <script defer src="../tableSpecificDefinitions.js"></script>
+
+    <!-- Load ODK-X libs -->
+    <script defer src="../../../../system/js/odkCommon.js"></script>
+    <script defer src="../../../../system/js/odkData.js"></script>
+    <script defer src="../../../../system/tables/js/odkTables.js"></script>
+
+    <!-- Load SkipLogic detail view lib -->
+    <script defer src="../js/SkipLogic_detail.js"></script>
+</head>
+<body>
+<main id="wrapper" class="d-none my-3">
+    <div class="container-fluid">
+        <h1 class="text-center display-3">Skip Logic Detail View</h1>
+        <h2 class="text-center display-6 text-secondary">Order Detail</h2>
+
+        <div id="skipLogicDetailContainer" class="vstack gap-2 mx-4 mt-4"></div>
+    </div>
+</main>
+
+<template id="skipLogicDetailTemplate">
+    <div class="hstack gap-2 justify-content-between">
+        <span class="pe-4 fw-bold skip-logic-detail-label"></span>
+        <span class="d-inline-block text-end text-truncate fw-light skip-logic-detail-value"></span>
+    </div>
+</template>
+
+<!-- Bootstrap JS -->
+<script src="../../../assets/js/bootstrap-5.1.0/bootstrap.bundle.min.js"></script>
+</body>
+</html>

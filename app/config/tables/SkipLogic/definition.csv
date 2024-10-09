@@ -1,0 +1,12 @@
+_element_key,_element_name,_element_type,_list_child_element_keys
+box,box,string,[]
+flavor,flavor,string,[]
+location,location,geopoint,"[""location_accuracy"",""location_altitude"",""location_latitude"",""location_longitude""]"
+location_accuracy,accuracy,number,[]
+location_altitude,altitude,number,[]
+location_latitude,latitude,number,[]
+location_longitude,longitude,number,[]
+menu,menu,string,[]
+name,name,string,[]
+size,size,string,[]
+state,state,string,[]
