@@ -1309,9 +1309,12 @@ promptTypes.select = promptTypes._linked_type.extend({
         var matchedChoice = null;
         var choiceList = [];
         var newChoice = null;
-
         if (savedValue === null || savedValue === undefined)
             return choiceList;
+
+        if (!Array.isArray(savedValue)) {
+			savedValue = savedValue.split(',');
+		}
 
         for (var i = 0; i < savedValue.length; i++)
         {
@@ -1726,7 +1729,7 @@ promptTypes.input_type = promptTypes.base.extend({
     type: "input_type",
     templatePath: "templates/input_type.handlebars",
     inputAttributes: {
-        'placeholder':'not specified'
+        'placeholder':''
     },
     displayed: false,
     modified: false,
