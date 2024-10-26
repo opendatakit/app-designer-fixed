@@ -18,6 +18,36 @@
     <script type="text/javascript" src="survey/js/odkSurvey.js"></script>
     <script type="text/javascript" src="survey/js/odkSurveyStateManagement.js"></script>
     <script src="/node_modules/@sqlite.org/sqlite-wasm/sqlite-wasm/jswasm/sqlite3.js"></script>
+    <script type="text/javascript" defer>
+
+        // this code is use to add Edit and Delete text inside span of button 
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Define the observer
+            const observer = new MutationObserver(function() {
+                // Select all elements with the class 'glyphicon glyphicon-pencil'
+                const editButtonSpans = document.querySelectorAll('.glyphicon.glyphicon-pencil');
+                const deleteButtonSpan = document.querySelectorAll('.glyphicon.glyphicon-remove-sign')
+
+                if (editButtonSpans.length > 0) {
+                    editButtonSpans.forEach(function(span) {
+                        span.innerHTML = ' Edit';
+                    });
+                    
+                    observer.disconnect(); 
+                }
+                if (deleteButtonSpan.length > 0) {
+                    deleteButtonSpan.forEach(function(span) {
+                        span.innerHTML = ' Delete';
+                    });
+                    
+                    observer.disconnect(); 
+                }
+            });
+    
+            observer.observe(document.body, { childList: true, subtree: true });
+        });
+    </script>
     <noscript>This page requires javascript</noscript>
 </head>
 <body>

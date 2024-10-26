@@ -1,8 +1,11 @@
 body {
-	overflow: auto;
-	min-width: 100%;
-	min-height: 100%;
-	width: 100%;
+    background-color: #fdfdfd;
+    padding: 24px;
+    box-sizing: border-box;
+    overflow: auto;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
     height: 100%;
     /* This is to disable accidental highlighting of survey text */
     -webkit-touch-callout: none;
@@ -11,35 +14,48 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    font-size:large;
+    font-size: large;
 }
 
 @media all and (max-width: 25em) {
-    .my-breakpoint-no-nav-btn-text.ui-grid-b .ui-block-a { width: 54.95%; }
+    .my-breakpoint-no-nav-btn-text.ui-grid-b .ui-block-a {
+        width: 54.95%;
+    }
     .my-breakpoint-no-nav-btn-text.ui-grid-b .ui-block-b,
-    .my-breakpoint-no-nav-btn-text.ui-grid-b .ui-block-c { width: 22.425%; }
+    .my-breakpoint-no-nav-btn-text.ui-grid-b .ui-block-c {
+        width: 22.425%;
+    }
 }
 
 @media all and (min-width: 26em) {
-    .my-breakpoint.ui-grid-b .ui-block-a { width: 49.95%; }
+    .my-breakpoint.ui-grid-b .ui-block-a {
+        width: 49.95%;
+    }
     .my-breakpoint.ui-grid-b .ui-block-b,
-    .my-breakpoint.ui-grid-b .ui-block-c { width: 24.925%; }
+    .my-breakpoint.ui-grid-b .ui-block-c {
+        width: 24.925%;
+    }
 }
 
 @media all and (min-width: 26em) {
-    .odk-footer .my-breakpoint.ui-grid-b  .ui-block-a { width: 24.925%; }
-    .odk-footer .my-breakpoint.ui-grid-b  .ui-block-b { width: 49.95%; }
-    .odk-footer .my-breakpoint.ui-grid-b  .ui-block-c { width: 24.925%; }
+    .odk-footer .my-breakpoint.ui-grid-b .ui-block-a {
+        width: 24.925%;
+    }
+    .odk-footer .my-breakpoint.ui-grid-b .ui-block-b {
+        width: 49.95%;
+    }
+    .odk-footer .my-breakpoint.ui-grid-b .ui-block-c {
+        width: 24.925%;
+    }
 }
-
 
 .odk-screen {
-	min-height: inherit;
-	min-width: inherit;
+    min-height: inherit;
+    min-width: inherit;
 }
 .odk-scroll {
-	clear: both;
-	width: inherit;
+    clear: both;
+    width: inherit;
 }
 .odk-container {
     padding: 0;
@@ -56,7 +72,11 @@ body {
 
 input[type="range"] {
     -webkit-appearance: none;
-    background: linear-gradient(to right, rgba(175, 175, 175, 0.3) 0%, rgba(175, 175, 175, 0.3) 100%);
+    background: linear-gradient(
+        to right,
+        rgba(175, 175, 175, 0.3) 0%,
+        rgba(175, 175, 175, 0.3) 100%
+    );
     background-position: center;
     background-size: 100% 4px;
     background-repeat: no-repeat;
@@ -71,40 +91,40 @@ input[type="range"] {
 }
 
 input[type="range"]::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	background-color: #ecf0f1;
-	border: 1px solid #bdc3c7;
-	width: 30px;
-	height: 30px;
-	border-radius: 15px;
-	cursor: pointer;
+    -webkit-appearance: none;
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
     pointer-events: none;
     position: relative;
 }
 
 input[type="range"]::-webkit-slider-thumb:before {
-  position: absolute;
-  top: 12px;
-  left: -9999px;
-  width: 9999px;
-  height: 4px;
-  background: #272727;
-  content: ' ';
+    position: absolute;
+    top: 12px;
+    left: -9999px;
+    width: 9999px;
+    height: 4px;
+    background: #272727;
+    content: " ";
 }
 
 .value-box {
     flex: none;
-    position:relative;
-    right:0;
+    position: relative;
+    right: 0;
     font-size: 30px;
     text-align: center;
     text-indent: -9px;
     color: #ffffff;
     background-color: #272727;
-    height:40px;
+    height: 40px;
     margin-top: 5px;
     margin-bottom: 5px;
-    float:right;
+    float: right;
 }
 
 .value-box:before {
@@ -113,7 +133,7 @@ input[type="range"]::-webkit-slider-thumb:before {
     border-color: transparent #272727 transparent transparent;
     position: absolute;
     left: -17px;
-    content: ' ';
+    content: " ";
 }
 
 /* navbars */
@@ -132,10 +152,10 @@ input[type="range"]::-webkit-slider-thumb:before {
     border-style: solid;
     margin-bottom: 30px;
     margin-right: 0;
-    margin-left:0;
+    margin-left: 0;
     width: 100%;
-    margin-left:0;
-    margin-right:0;
+    margin-left: 0;
+    margin-right: 0;
 }
 .odk-footer {
     overflow: hidden;
@@ -150,16 +170,16 @@ input[type="range"]::-webkit-slider-thumb:before {
     text-shadow: 0 1px 0 #eee;
     border-width: 1px 0;
     border-style: solid;
-	position: fixed;
+    position: fixed;
     bottom: 0%;
-    width:100%;
-    margin-left:0;
-    margin-right:0;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     z-index: 10000;
 }
 
 .odk-navbar-btn {
-    width:100%;
+    width: 100%;
     padding: 10px;
 
     text-overflow: ellipsis;
@@ -170,7 +190,8 @@ input[type="range"]::-webkit-slider-thumb:before {
     padding-left: 0;
     padding-right: 7px;
 }
-.odk-header-next-btn, .odk-footer-next-btn {
+.odk-header-next-btn,
+.odk-footer-next-btn {
     padding-left: 0;
     padding-right: 15px;
 }
@@ -182,7 +203,7 @@ input[type="range"]::-webkit-slider-thumb:before {
 /* form list (user branch) */
 .form-list {
     display: block;
-    padding:5px;
+    padding: 5px;
 }
 .form-list a {
     padding: 10px;
@@ -217,23 +238,24 @@ input[type="range"]::-webkit-slider-thumb:before {
 
 /* select inline */
 .inline-label-container {
-    float:left;
-    width:50%;
+    float: left;
+    width: 50%;
 }
 .inline-label-container > :first-child {
-    margin-top: .5em;
+    margin-top: 0.5em;
 }
 .inline-fieldset {
-    float:right;
-    margin-left:1em;
-    display:block;
+    float: right;
+    margin-left: 1em;
+    display: block;
 }
 
 /* Grid select styles: */
 .grid-select-item input {
-    display:none;
+    display: none;
 }
-.grid-select-item img, .form-list img {
+.grid-select-item img,
+.form-list img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -248,20 +270,40 @@ input[type="range"]::-webkit-slider-thumb:before {
     padding: 3px;
 }
 .grid-select-item:active {
-    border: 1px solid 		#aaa /*{d-bdown-border}*/;
-	background: 			#eee /*{d-bdown-background-color}*/;
-	font-weight: bold;
-	color: 					#333 /*{d-bdown-color}*/;
-	text-shadow: 0 /*{d-bdown-shadow-x}*/ 1px /*{d-bdown-shadow-y}*/ 0 /*{d-bdown-shadow-radius}*/ 	#fff /*{d-bdown-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #e5e5e5 /*{d-bdown-background-start}*/), to( #f2f2f2 /*{d-bdown-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #e5e5e5 /*{d-bdown-background-start}*/, #f2f2f2 /*{d-bdown-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #e5e5e5 /*{d-bdown-background-start}*/, #f2f2f2 /*{d-bdown-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #e5e5e5 /*{d-bdown-background-start}*/, #f2f2f2 /*{d-bdown-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #e5e5e5 /*{d-bdown-background-start}*/, #f2f2f2 /*{d-bdown-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #e5e5e5 /*{d-bdown-background-start}*/, #f2f2f2 /*{d-bdown-background-end}*/);
+    border: 1px solid #aaa /*{d-bdown-border}*/;
+    background: #eee /*{d-bdown-background-color}*/;
+    font-weight: bold;
+    color: #333 /*{d-bdown-color}*/;
+    text-shadow: 0 /*{d-bdown-shadow-x}*/ 1px /*{d-bdown-shadow-y}*/ 0
+        /*{d-bdown-shadow-radius}*/ #fff /*{d-bdown-shadow-color}*/;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#e5e5e5 /*{d-bdown-background-start}*/),
+        to(#f2f2f2 /*{d-bdown-background-end}*/)
+    ); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(
+        #e5e5e5 /*{d-bdown-background-start}*/,
+        #f2f2f2 /*{d-bdown-background-end}*/
+    ); /* Chrome 10+, Saf5.1+ */
+    background-image: -moz-linear-gradient(
+        #e5e5e5 /*{d-bdown-background-start}*/,
+        #f2f2f2 /*{d-bdown-background-end}*/
+    ); /* FF3.6 */
+    background-image: -ms-linear-gradient(
+        #e5e5e5 /*{d-bdown-background-start}*/,
+        #f2f2f2 /*{d-bdown-background-end}*/
+    ); /* IE10 */
+    background-image: -o-linear-gradient(
+        #e5e5e5 /*{d-bdown-background-start}*/,
+        #f2f2f2 /*{d-bdown-background-end}*/
+    ); /* Opera 11.10+ */
+    background-image: linear-gradient(
+        #e5e5e5 /*{d-bdown-background-start}*/,
+        #f2f2f2 /*{d-bdown-background-end}*/
+    );
 }
-
-
 
 /* popups */
 #screenPopup > .message {
@@ -270,73 +312,78 @@ input[type="range"]::-webkit-slider-thumb:before {
 #optionsPopup .btn-group-vertical {
     display: block;
 }
-#confirmationPopup .btn-group-vertical>.btn , #screenPopup .btn-group-vertical>.btn {
+#confirmationPopup .btn-group-vertical > .btn,
+#screenPopup .btn-group-vertical > .btn {
     background-color: #373737;
     color: white;
     border-color: #1f1f1f;
     font-size: 20px;
-    opacity:1;
+    opacity: 1;
 }
-#languagePopup .btn-group-vertical>.btn , #optionsPopup .btn-group-vertical>.btn,
-#confirmExitPopup .btn-group-vertical>.btn {
+#languagePopup .btn-group-vertical > .btn,
+#optionsPopup .btn-group-vertical > .btn,
+#confirmExitPopup .btn-group-vertical > .btn {
     font-size: 20px;
     padding: 12px;
 }
-#confirmationPopup .modal-dialog, #screenPopup .modal-dialog,
-#optionsPopup .modal-dialog, #languagePopup .modal-dialog,
+#confirmationPopup .modal-dialog,
+#screenPopup .modal-dialog,
+#optionsPopup .modal-dialog,
+#languagePopup .modal-dialog,
 #confirmExitPopup .modal-dialog {
     margin-top: 45px;
 }
-#confirmationPopup .modal-content, #screenPopup .modal-content {
+#confirmationPopup .modal-content,
+#screenPopup .modal-content {
     background-color: white;
 }
 
-.modal{
-   display: block;
-   background-color: rgba(0, 0, 0, 0.5);
- }
-
-.modal-content{
-   border-radius: 10px;
-   border: none;
-   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.modal {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-body{
+.modal-content {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-body {
     padding: 20px;
 }
 
 .modal-body h3 {
-    margin-bottom: 18px!important;
+    margin-bottom: 18px !important;
     font-size: 18px;
     font-weight: bold;
-    color: #1D1D1D ;
+    color: #1d1d1d;
 }
 
 .modal-body p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-.modal-body .btn-group-vertical{
-   display: flex;
-   margin-left: 30%;
-   gap: 10px;
+.modal-body .btn-group-vertical {
+    display: flex;
+    margin-left: 30%;
+    gap: 10px;
 }
 
 #yes-btn {
-    color: #DB6262!important;
-    background-color: transparent!important;
+    color: #db6262 !important;
+    background-color: transparent !important;
     border: none;
-    font-size: 14px!important;
+    font-size: 14px !important;
 }
 
 #no-btn {
-    background-color: #F2F7FC!important;
-    color: #1D1D1D!important;
+    background-color: #f2f7fc !important;
+    color: #1d1d1d !important;
     border: none;
-    font-size: 14px!important;
+    font-size: 14px !important;
     border-radius: 20px;
 }
 
@@ -344,10 +391,11 @@ input[type="range"]::-webkit-slider-thumb:before {
 Orangy glow.
 Eventually we should make a jqm theme for this.
 */
-.ui-input-text.ui-focus, .ui-input-search.ui-focus {
-    -moz-box-shadow: 1px 1px 12px 			rgb(255, 194, 0);
-	-webkit-box-shadow: 1px 1px 12px 		rgb(255, 194, 0);
-	box-shadow: 1px 1px 12px 				rgb(255, 194, 0);
+.ui-input-text.ui-focus,
+.ui-input-search.ui-focus {
+    -moz-box-shadow: 1px 1px 12px rgb(255, 194, 0);
+    -webkit-box-shadow: 1px 1px 12px rgb(255, 194, 0);
+    box-shadow: 1px 1px 12px rgb(255, 194, 0);
 }
 
 #block-ui {
@@ -377,7 +425,7 @@ Eventually we should make a jqm theme for this.
 .inline-deselect {
     /* Add media query for small screens? */
     margin-top: 0;
-    float:left;
+    float: left;
 }
 
 .odk-formlogo {
@@ -387,23 +435,23 @@ Eventually we should make a jqm theme for this.
     width: 100%;
 }
 
-.instanceRowControl{
-  float: right;
+.instanceRowControl {
+    float: right;
 }
 
-.openingRowControl{
-  float: right;
+.openingRowControl {
+    float: right;
 }
 
 .instanceList.layout-zebra li:nth-child(even) {
-  background: #f5f5f5;
-  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
-  -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;
-  box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    background: #f5f5f5;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
 }
 
 .instanceClearDiv {
-  clear: both;
+    clear: both;
 }
 
 /**
@@ -423,7 +471,7 @@ Eventually we should make a jqm theme for this.
 
 /* RQI: Arrow for Bottom */
 .bootstrap-datetimepicker-widget.bottom:before {
-    content: '';
+    content: "";
     display: inline-block;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
@@ -435,7 +483,7 @@ Eventually we should make a jqm theme for this.
 }
 
 .bootstrap-datetimepicker-widget.bottom:after {
-    content: '';
+    content: "";
     display: inline-block;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
@@ -447,7 +495,7 @@ Eventually we should make a jqm theme for this.
 
 /* RQI: Arrow for Top */
 .bootstrap-datetimepicker-widget.top:before {
-    content: '';
+    content: "";
     display: inline-block;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
@@ -459,7 +507,7 @@ Eventually we should make a jqm theme for this.
 }
 
 .bootstrap-datetimepicker-widget.top:after {
-    content: '';
+    content: "";
     display: inline-block;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
@@ -540,7 +588,7 @@ Eventually we should make a jqm theme for this.
 }
 
 .bootstrap-datetimepicker-widget td.today:before {
-    content: '';
+    content: "";
     display: inline-block;
     border-left: 7px solid transparent;
     border-bottom: 7px solid #389b98;
@@ -640,12 +688,21 @@ Eventually we should make a jqm theme for this.
     right: 7px;
 }
 
-.bootstrap-datetimepicker-widget ul.list-unstyled li.in div.timepicker div.timepicker-picker table.table-condensed tbody > tr > td {
+.bootstrap-datetimepicker-widget
+    ul.list-unstyled
+    li.in
+    div.timepicker
+    div.timepicker-picker
+    table.table-condensed
+    tbody
+    > tr
+    > td {
     padding: 0;
 }
 
 /* Customized Button */
-.btn-time, .btn-time:focus {
+.btn-time,
+.btn-time:focus {
     color: #389b98;
     text-decoration: none;
     background-color: transparent;
@@ -656,26 +713,120 @@ Eventually we should make a jqm theme for this.
 }
 
 .btn-time:hover {
-    color: #12615F;
+    color: #12615f;
     text-decoration: none;
     background-color: #eee;
 }
 
 .center-in-contents {
-  position: absolute;
-  top: 40%;
-  right: 5%;
+    position: absolute;
+    top: 40%;
+    right: 5%;
 }
 
 .contents-heading {
-    text-align:left;
-    overflow:hidden;
-    margin-right:50px;
-    font-weight:bold;
+    text-align: left;
+    overflow: hidden;
+    margin-right: 50px;
+    font-weight: bold;
 }
 
 .contents-description {
-    text-align:left;
-    overflow:hidden;
-    margin-right:50px;
+    text-align: left;
+    overflow: hidden;
+    margin-right: 50px;
+}
+
+/* Apply styles for survey app Button */
+
+.odk-base button {
+    transition: background-color 0.3s;
+    cursor: pointer;
+    border: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    color: white;
+    background-color: #5594d7;
+    display: block;
+    border-radius: 5px;
+}
+
+/* apply style on button for creating an instance: full-width, centered, with padding, 
+   a light border, and a pointer cursor */
+
+.createInstance {
+    display: block;
+    width: 100%;
+    padding: 8px 24px;
+    margin: 24px auto;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* apply style for delete and edit icon inside instance list */
+
+.glyphicon {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 14px;
+}
+
+.createInstance span {
+    margin-left: 8px;
+}
+
+.createInstance.btn-multiple {
+    width: auto;
+    padding: 16px 24px;
+    display: inline-block;
+}
+.instanceList {
+    margin-top: 64px;
+}
+.instanceList .list-group-item:not(:first-child) {
+    margin-top: 36px;
+}
+.instanceList .list-group-item {
+    margin-top: 36px;
+    background-color: #e8eef6;
+}
+
+.instanceListGrid .row {
+    display: flex;
+    flex-direction: column; /* Stack the columns vertically */
+}
+.col-xs-4 {
+    display: flex;
+    justify-content: center; /* Horizontally center the buttons */
+    margin: 4px;
+}
+.col-xs-8,
+.col-xs-4 {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.instanceRowControl {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Delete button: styled with red background, centered text, and padding for emphasis */
+
+.deleteInstance {
+    background-color: #db6262 !important;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.instanceRowControl .btn {
+    margin-right: 10px; /* Adjust the value as needed */
+    border-radius: 4px !important;
 }

@@ -1,148 +1,157 @@
 /* Custom Stylesheet */
 /* ODK specific */
 .bland {
-	width: inherit;
-	height: inherit;
-	background-color: gray;
-	margin: 0 auto;
-	padding: 20px;
-	overflow: inherit;
+    width: inherit;
+    height: inherit;
+    background-color: gray;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: inherit;
 }
 .topversion {
-	font-size: 20px;
-	font-weight: bold;
-	text-align: right;
-	color: blue;
-	margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    color: blue;
+    margin: 20px;
 }
 .fulliframearea {
-	width: inherit;
-	height: inherit;
-	margin-left: 0;
-	margin-right: 0;
-	padding: 0;
-	overflow: inherit;
+    width: inherit;
+    height: inherit;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    overflow: inherit;
 }
 .fulltabarea {
-	width: inherit;
-	height: inherit;
-	margin-left: 0;
-	margin-right: 0;
-	padding: 0;
-	overflow: visible;
+    width: inherit;
+    height: inherit;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    overflow: visible;
 }
 .fullembedded {
-	width: inherit;
-	height: inherit;
-	overflow: visible;
+    width: inherit;
+    height: inherit;
+    overflow: visible;
 }
 .flowcancel {
-	padding-top: 12px;
-	float: none;
-	clear: both;
+    padding-top: 12px;
+    float: none;
+    clear: both;
 }
 .flowcenter {
-	text-align: center;
-	margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
 }
 .flowleft {
-	float: left;
+    float: left;
 }
 .backbutton {
-	display: block;
-	float: right;
-	font-size: 20px;
-	font-weight: bold;
-	padding: 16px;
-	margin-bottom: 10px;
+    display: block;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 16px;
+    margin-bottom: 10px;
 }
 select {
-	font-size: 20px;
+    font-size: 20px;
 }
 label {
-	font-size: 20px;
+    font-size: 20px;
 }
 p {
-	font-size: 20px;
+    font-size: 20px;
 }
 span {
-	font-size: 20px;
+    font-size: 20px;
 }
 .pb {
-	font-weight: bold;
+    font-weight: bold;
 }
 .pbutton {
-	display: inline-block;
-	font-size: 24px;
-	font-weight: bold;
-	margin-top: 36px;
-	padding: 24px;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 36px;
+    padding: 24px;
 }
 .flowright {
-	float: right;
+    float: right;
 }
 .resizeablescreen {
-	margin: 0 auto;
-	width: 480px;
-	height: 855px;
-	display: block;
-	background-color: white;
-	border-top-width: 0px;
-	border-right-width: 0px;
-	border-bottom-width: 0px;
-	border-left-width: 0px;
+    margin: 0 auto;
+    width: 480px;
+    height: 855px;
+    display: block;
+    background-color: white;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
 }
 
 .backviewport {
-	margin: 0 auto;
-	width: 95%;
-	height: 1000px;
-	display: block;
-	overflow: inherit;
+    margin: 0 auto;
+    width: 95%;
+    height: 1000px;
+    display: block;
+    overflow: inherit;
 }
 
 .bigviewport {
-	width: 100%;
-	height: 97%;
-	display: block;
-	background-color: white;
-	border-top-width: 0px;
-	border-right-width: 0px;
-	border-bottom-width: 0px;
-	border-left-width: 0px;
-	min-height: 600px;
+    width: 100%;
+    height: 97%;
+    display: block;
+    background-color: white;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    min-height: 600px;
 }
 .themeviewport {
-	margin: 0 auto;
-	width: 100%;
-	height: 90%;
-	display: block;
-	background-color: white;
-	border-top-width: 0px;
-	border-right-width: 0px;
-	border-bottom-width: 0px;
-	border-left-width: 0px;
+    margin: 0 auto;
+    width: 100%;
+    height: 90%;
+    display: block;
+    background-color: white;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
 }
 .absolute {
-	position: absolute;
-	overflow: auto;
-	width: 100%;
-	height: 100%;
+    position: absolute;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
 }
 .tabs {
-  float: none;
-  list-style: none;
-  position: relative;
-  padding: 0;
-  margin: 0px auto;
+    float: none;
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0px auto;
 }
-.tabs li{
-  float: left;
+.tabs li {
+    float: left;
 }
 .tabs button {
+    margin: 2px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    color: white;
+    background-color: #5594d7;
     display: block;
     padding: 10px 20px;
-    border-radius: 2px 2px 0 0;
+    border-radius: 4px;
     border: none;
     color: black;
     font-size: 24px;
@@ -155,28 +164,28 @@ span {
     transition: all 0.2s ease-in-out;
 }
 .tabs button:hover {
-  background: lightgray;
-  top: 0;
+    background: lightgray;
+    top: 0;
 }
 
 .tabs button.active {
-  background: gray;
-  color: white;
-  top: 0;
+    background: gray;
+    color: white;
+    top: 0;
 }
 
 .content-tab {
-  display: none;
-  text-align: left;
-  width: 100%;
-  height: 1600px;
-  font-size: 20px;
-  padding-top: 10px;
-  background: lightgray;
-  padding: 15px;
-  color: white;
-  top: 53px;
-  left: 0;
-  box-sizing: border-box;
-  overflow: visible;
+    display: none;
+    text-align: left;
+    width: 100%;
+    height: 1600px;
+    font-size: 20px;
+    padding-top: 10px;
+    background: lightgray;
+    padding: 15px;
+    color: white;
+    top: 53px;
+    left: 0;
+    box-sizing: border-box;
+    overflow: visible;
 }
